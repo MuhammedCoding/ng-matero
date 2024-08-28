@@ -1,6 +1,6 @@
 @if (showHeader) {
   <div class="matero-sidebar-header">
-    <app-branding></app-branding>
+    <app-branding [isCollapsed]="toggleChecked"></app-branding>
     @if (showToggle) {
       <mat-slide-toggle hideIcon [checked]="toggleChecked" (change)="toggleCollapsed.emit()">
       </mat-slide-toggle>

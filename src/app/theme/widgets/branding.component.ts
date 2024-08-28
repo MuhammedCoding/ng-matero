@@ -9,7 +9,9 @@ import { Component, Input } from '@angular/core';
         class="brand-logo align-middle m-2 r-full"
         alt="logo"
       />
-      <span class="hide-small">Electricity Company of GHANA LTD.</span>
+      @if (!isCollapsed) {
+        <span class="hide-small">Electricity Company of GHANA LTD.</span>
+      }
     </a>
   `,
   styles: [
@@ -32,4 +34,6 @@ import { Component, Input } from '@angular/core';
   ],
   standalone: true,
 })
-export class BrandingComponent {}
+export class BrandingComponent {
+  @Input() isCollapsed: boolean = false;
+}
