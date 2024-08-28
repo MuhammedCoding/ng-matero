@@ -1,22 +1,32 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-branding',
   template: `
-    <a class="d-inline-block text-nowrap r-full text-reset" href="/">
-      <img src="./assets/images/matero.png" class="brand-logo align-middle m-2 r-full" alt="logo" />
-      <span class="align-middle f-s-16 f-w-500 m-x-8 hide-small">MATERO</span>
+    <a class="d-flex align-items-center text-wrap r-full" href="/">
+      <img
+        src="./assets/images/ghana-logo.jpg"
+        class="brand-logo align-middle m-2 r-full"
+        alt="logo"
+      />
+      <span class="hide-small">Electricity Company of GHANA LTD.</span>
     </a>
   `,
   styles: [
     `
       .brand-logo {
-        width: 30px;
-        height: 30px;
+        width: 42px;
+        height: 40px;
       }
 
       a {
         text-decoration: none;
+        color: inherit;
+        gap: 5px;
+      }
+      span {
+        font-size: 12px;
+        font-weight: bold;
       }
     `,
   ],

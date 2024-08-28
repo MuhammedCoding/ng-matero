@@ -14,6 +14,7 @@
 
 .matero-sidenav {
   position: absolute;
+  width: var(--sidenav-width);
   overflow-x: hidden;
   transition: transitions.swift-ease-out(width); // Only set width property
 }
@@ -52,7 +53,7 @@
     }
 
     .matero-user-panel-avatar {
-      transform: scale(.5);
+      transform: scale(0.5);
     }
 
     &:hover {
